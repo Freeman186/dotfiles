@@ -5,4 +5,4 @@
 * `$ script/bootstrap`
 
 
-original by cmoel[https://github.com/cmoel/]
+original by [cmoel](https://github.com/cmoel/)
