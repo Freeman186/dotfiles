@@ -1,6 +1,8 @@
 silent! call pathogen#infect()
 call pathogen#helptags()
 
+set title
+set ignorecase
 set nocompatible
 set autoindent
 set backspace=indent,eol,start
@@ -103,6 +105,9 @@ if has("autocmd")
     \ endif
 
   autocmd BufReadPost fugitive://* set bufhidden=delete
+
+  " Set max width of line to 75 for git commits
+  autocmd Filetype gitcommit setlocal spell textwidth=72
 endif
 
 " Plugin settings

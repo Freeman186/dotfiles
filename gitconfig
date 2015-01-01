@@ -6,27 +6,32 @@ pager = less -FRSX
 
 [diff]
 tool = vimdiff
+algorithm = patience
 
 [alias]
 hist = log --graph --decorate --oneline --all
 co = checkout
 dc = diff --cached
-st = status
-ci = commit
-di = diff
+s = status
+c = commit
+d = diff
 dfs = diff --staged
-br = branch
+b = branch
 df = diff
 
 [user]
-name = Christopher Moeller
-email = cmoel@me.com
+name = Anton Domratchev
+email = freeman.ad@gmail.com
 
 [color]
 ui = true
 
 [merge]
 tool = vimdiff
+ff = false
+
+[commit]
+template = /Users/antondomratchev/.git-commit-template
 
 [hub]
 protocol = https
@@ -39,5 +44,10 @@ rebase = true
 
 [apply]
 whitespace = nowarn
+
 [push]
-	default = simple
+default = simple
+
+[filter "media"]
+clean = git-media-clean %f
+smudge = git-media-smudge %f

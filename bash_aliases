@@ -2,18 +2,17 @@ alias rehash='source $HOME/.bash_profile'
 alias ebrc="open $HOME/.bashrc"
 
 # Command/Application aliases
-alias ..='cd ..'
-alias ...='cd ../..'
 alias la='ls -A'
 alias ll='ls -lAGh'
 alias vi='vim'
+alias composer="php ~/composer.phar"
 
 # Code location aliases
 alias code='cd $HOME/code && pwd && ls -lAGh'
 
 # Project aliases
-alias bi='cd $HOME/code && cd bi'
-alias wima='cd $HOME/code && cd wima'
+alias captix='cd $HOME/code && cd captix-events.dev'
+alias grok='cd $HOME/code && cd groksite'
 
 # Git aliases
 alias gs='git status '

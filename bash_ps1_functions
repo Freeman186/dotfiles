@@ -162,3 +162,40 @@ ps1_set()
 {
   PROMPT_COMMAND="ps1_update $@"
 }
+
+#Gitlog output from a branch
+function gitlog() {
+    if [ -z "$1" ]
+    then
+        HOURS=24
+    else
+        HOURS=$1
+    fi
+    clear;
+    git log --reverse --author="`git config user.name`" --format="%h (%s)" --since="`date -v-${HOURS}H`"
+}
+
+#.bash_alias
+function phpspec()
+{
+    export USE_ZEND_ALLOC=0;
+
+        PROJECT_DIRECTORY=`git rev-parse --show-toplevel`
+
+        php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" "$@"
+
+            export USE_ZEND_ALLOC=1
+}
+
+#Test aliases
+integration ()
+{
+        PROJECT_DIRECTORY=`git rev-parse --show-toplevel`;
+            php "${PROJECT_DIRECTORY}/vendor/bin/codecept" run Integration "$@" --verbose
+}
+
+codecept ()
+{
+        PROJECT_DIRECTORY=`git rev-parse --show-toplevel`;
+            php "${PROJECT_DIRECTORY}/vendor/bin/codecept" "$@" --verbose
+}

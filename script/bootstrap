@@ -23,8 +23,11 @@ def link(path, link_name)
 end
 
 puts "Bootstrapping dotfiles..."
-link "~/dotfiles/ackrc", "~/.ackrc"
 link "~/dotfiles/bash_aliases", "~/.bash_aliases"
+link "~/dotfiles/bash_commit_template", "~/.bash_commit_template"
+link "~/dotfiles/bash_git_autocomplete", "~/.bash_git_autocomplete"
+link "~/dotfiles/bash_git_prompt", "~/.bash_git_prompt"
+link "~/dotfiles/bash_git_syntax_aware", "~/.bash_git_syntax_aware"
 link "~/dotfiles/bash_profile", "~/.bash_profile"
 link "~/dotfiles/bash_prompt", "~/.bash_prompt"
 link "~/dotfiles/bash_ps1_functions", "~/.bash_ps1_functions"
@@ -32,15 +35,8 @@ link "~/dotfiles/bash_shell_variables", "~/.bash_shell_variables"
 link "~/dotfiles/bashrc", "~/.bashrc"
 link "~/dotfiles/editorconfig", "~/.editorconfig"
 link "~/dotfiles/gemrc", "~/.gemrc"
-link "~/dotfiles/gist-vim", "~/.gist-vim"
 link "~/dotfiles/gitconfig", "~/.gitconfig"
 link "~/dotfiles/gitignore_global", "~/.gitignore_global"
-link "~/dotfiles/irbrc", "~/.irbrc"
-link "~/dotfiles/iex.exs", "~/.iex.exs"
-link "~/dotfiles/muttrc", "~/.muttrc"
-link "~/dotfiles/pryrc", "~/.pryrc"
-link "~/dotfiles/tm_properties", "~/.tm_properties"
-link "~/dotfiles/tmux.conf", "~/.tmux.conf"
 link "~/dotfiles/vimrc", "~/.vimrc"
 
 # directories
