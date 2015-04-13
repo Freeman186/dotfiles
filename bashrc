@@ -14,4 +14,5 @@ export
 PATH="${HOME}/bin"                                            # First home folder bin
 PATH="${PATH}:/usr/local/bin:/usr/local/sbin"                 # local stuffs
 PATH="${PATH}:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"     # Then add the other default OS X places
+PATH="${PATH}:~/.composer/vendor/bin"                         # PHP Composer binaries
 export PATH

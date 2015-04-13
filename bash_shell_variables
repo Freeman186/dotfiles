@@ -1,5 +1,5 @@
-export EDITOR='vi'
-export LESS='-M'
-export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll:la"
-export HISTCONTROL=ignoreboth                    # ignoredups:ignorespace
-export NODE_PATH="$NODE_PATH:/usr/local/lib/node_modules
+#export EDITOR='vi'
+#export LESS='-M'
+#export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll:la"
+#export HISTCONTROL=ignoreboth                    # ignoredups:ignorespace
+#export NODE_PATH="$NODE_PATH:/usr/local/lib/node_modules

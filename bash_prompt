@@ -65,7 +65,7 @@ ps1_git_status() {
 }
 
 bash_prompt() {
-  local prompt_char='$' separator="\[\033[0m\]\n"
+  local prompt_char='$' separator="\[\033[0m\]"
   (( $UID == 0 )) && prompt_char='#'
 
   PS1="$(current_time) $(ps1_identity) $(ps1_git)${separator}${prompt_char} "

@@ -1,5 +1,5 @@
 [core]
-excludesfile = /Users/cmoel/.gitignore_global
+excludesfile = /Users/antondomratchev/.gitignore_global
 editor = vim
 autocrlf = input
 pager = less -FRSX
@@ -37,7 +37,7 @@ template = /Users/antondomratchev/.git-commit-template
 protocol = https
 
 [init]
-templatedir = /Users/cmoel/.git_template
+templatedir = /Users/antondomratchev/.git_template
 
 [pull]
 rebase = true
