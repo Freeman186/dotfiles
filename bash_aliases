@@ -13,17 +13,22 @@ alias sites='cd $HOME/sites && pwd && ls -lAGh'
 # Project aliases
 alias captix='cd $HOME/sites && cd captix-events'
 alias grok='cd $HOME/sites && cd groksite'
+alias elformo='cd $HOME/sites && cd elformo'
 
 # Git aliases
-alias git s='git status'
-alias git dd='git diff'
-alias git a='git add'
+alias s='git status'
+alias dd='git diff'
+alias a='git add'
+alias mlog='git log --oneline --reverse --since="5am" --author="Anton" | sed "s/^/* /"'
 
 # Ruby/Rails helper aliases
 alias b='bundle'
 alias be="bundle exec $1"
 alias bu='bundle update'
 alias rake='bundle exec rake'
+
+# Other aliases
+alias ngrok-captix='ngrok http -host-header=rewrite captix.dev:80'
 
 #Project tools aliases
 function phpspec() {
@@ -36,10 +41,13 @@ function phpspec() {
     if [[ $@ == *run* ]]
       then
         STOP_ON_FAILURE='--stop-on-failure'
+        php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" "$@" $STOP_ON_FAILURE --format=nyan.cat
         fi
 
-        php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" "$@" $STOP_ON_FAILURE --format=nyan.cat
-
+    if [[ $@ == *describe* ]]
+      then
+        php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" "$@"
+        fi        
         export USE_ZEND_ALLOC=1
 }
 
