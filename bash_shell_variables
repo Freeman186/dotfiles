@@ -3,3 +3,7 @@
 #export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll:la"
 #export HISTCONTROL=ignoreboth                    # ignoredups:ignorespace
 #export NODE_PATH="$NODE_PATH:/usr/local/lib/node_modules
+
+# NVM
+export NVM_DIR="$HOME/.nvm" 
+. "/usr/local/opt/nvm/nvm.sh"
