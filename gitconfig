@@ -7,7 +7,6 @@ pager = less -FRSX
 [diff]
 tool = vimdiff
 algorithm = patience
-
 [alias]
 hist = log --graph --decorate --oneline --all
 co = checkout
@@ -24,6 +23,7 @@ mlog = log --oneline --reverse --since="5am" --author="Anton"
 [user]
 name = Anton Domratchev
 email = freeman.ad@gmail.com
+username = antondomratchev
 
 [color]
 ui = true
@@ -37,9 +37,6 @@ template = /Users/antondomratchev/.bash_commit_template
 
 [hub]
 protocol = https
-
-#[init]
-#templatedir = /Users/antondomratchev/.git_template
 
 [pull]
 rebase = true
