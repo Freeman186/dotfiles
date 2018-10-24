@@ -2,9 +2,9 @@
 source "${HOME}/.bash_aliases"
 source "${HOME}/.bash_prompt"
 source "${HOME}/.bash_shell_variables"
-#source "${HOME}/.bash_git_autocomplete"
-#source "${HOME}/.bash_git_prompt"
-#source "${HOME}/.bash_git_syntax_aware"
+source "${HOME}/.bash_git_autocomplete"
+source "${HOME}/.bash_git_prompt"
+source "${HOME}/.bash_git_syntax_aware"
 #[[ -s "$HOME/.rvm/contrib/ps1_functions" ]] &&
 #source "$HOME/.rvm/contrib/ps1_functions"
 
@@ -23,7 +23,3 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
