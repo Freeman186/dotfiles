@@ -118,3 +118,9 @@ profile
 DerivedData
 .idea/
 .vagrant
+
+# VSCode #
+##########
+.vscode/*
+jsconfig.json
+.vscode

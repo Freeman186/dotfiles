@@ -1,5 +1,5 @@
 [core]
-excludesfile = /Users/antondomratchev/.gitignore_global
+	excludesfile = ~/.gitignore_global
 editor = vim
 autocrlf = input
 pager = less -FRSX
@@ -33,7 +33,7 @@ tool = vimdiff
 ff = false
 
 [commit]
-template = /Users/antondomratchev/.bash_commit_template
+	template = ~/.git_commit_template
 
 [hub]
 protocol = https

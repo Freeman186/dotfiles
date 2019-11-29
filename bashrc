@@ -5,8 +5,6 @@ source "${HOME}/.bash_shell_variables"
 source "${HOME}/.bash_git_autocomplete"
 source "${HOME}/.bash_git_prompt"
 source "${HOME}/.bash_git_syntax_aware"
-#[[ -s "$HOME/.rvm/contrib/ps1_functions" ]] &&
-#source "$HOME/.rvm/contrib/ps1_functions"
 
 
 # PATH...
@@ -16,7 +14,7 @@ PATH="${PATH}:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"     # Then add the oth
 PATH="${PATH}:~/.composer/vendor/bin"                         # PHP Composer binaries
 export PATH
 
-export CDPATH=".:${HOME}/sites/"
+export CDPATH=".:${HOME}/Code/"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
